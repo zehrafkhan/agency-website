@@ -14,24 +14,25 @@ const theme = createTheme({
 
   typography: {
     h2: {
-      fontFamily: "Montserrat, sans-serif",
+      fontFamily: 'Lato, sans-serif',
       fontWeight: 700,
-      fontSize: "32px",
-      lineHeight: "39px",
+      fontSize: "25px",
+      lineHeight: "30px",
       color: "#000000",
       [breakpoints.up("md")]: {
-        fontSize: "64px",
+        fontSize: "35px",
         lineHeight: "78px",
       },
     },
     h3: {
       fontFamily: "Montserrat, sans-serif",
       fontWeight: 700,
-      fontSize: "24px",
+      fontSize: "21px",
       lineHeight: "29px",
       color: "#000000",
     },
 
+    
     body1: {
         fontFamily: "Montserrat, sans-serif",
         fontWeight: 400,
@@ -44,7 +45,33 @@ const theme = createTheme({
           fontWeight: 500,
         },
       },
-
+      someStyles: {
+        fontFamily: 'Montserrat,sans-serif',
+        textTransform: 'capitalize',
+      },
+  },
+  components: {
+    // Name of the component
+    MuiOutlinedInput: {
+      styleOverrides: {
+        notchedOutline: {
+          border: '0.5px solid #777FEB',
+        },
+        root: {
+          borderRadius: '8px',
+          color: '#000',
+          fontSize: '16px',
+          lineHeight: '20px',
+          fontWeight: 500,
+          '&.Mui-focused .MuiOutlinedInput-notchedOutline': {
+            border: '2px solid #777FEB',
+          },
+          '&:hover .MuiOutlinedInput-notchedOutline': {
+            border: '2px solid #777FEB',
+          },
+        },
+      },
+    },
   },
 });
 
