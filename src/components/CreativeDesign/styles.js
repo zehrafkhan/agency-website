@@ -1,6 +1,6 @@
 const styles = {
   creativDesign: (theme) => ({
-    padding: "60px 20px 88px",
+    padding: "10px 20px 88px",
     textAling: "center",
     [theme.breakpoints.up("lg")]: {
       display: "flex",
@@ -29,5 +29,6 @@ const styles = {
       gap: "15px",
     },
   }),
+ 
 };
 export default styles;

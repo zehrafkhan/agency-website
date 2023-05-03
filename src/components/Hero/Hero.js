@@ -3,23 +3,24 @@ import Box from "@mui/material/Box";
 import Button from "../Button";
 import Typography from "@mui/material/Typography";
 
-import photo_banner from "../../assets/img/photo_banner.png";
+import photo_banner from "../../assets/img/photo_banner.jpeg";
+
+import Fade from 'react-reveal/Fade';
 
 import styles from "./styles";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
     <Box sx={styles.hero}>
       <Box sx={styles.wrapper}>
         <Box sx={{ textAlign: "left" }}>
-          <Typography variant="h2">The most Advanced Education</Typography>
+          <Typography variant="h2"> <Fade left>S.H JONDHALE EDUCATIONAL GROUP   </Fade></Typography>
           <Typography variant="body1" sx={styles.text}>
-            Choose out of 2500+ mentors. Trusted by 250k users. <br/> Industry experts
-            and top university professors Runs in a browser. Can be downloaded
-            on desktop, tablet and mobiles. Extremely fast loading at 200ms.
-            Updates work directory from the website.
+          “FulFill Your DREAMS Through RIGHTEOUS Education”,
+          Learn how to be happy with what you have while you pursue all that you want.
           </Typography>
-          <Button>join us</Button>
+          <Button><Link to='/contact' style={{textDecoration:'none'}}>join us</Link></Button>
         </Box>
         <Box component='img' src={photo_banner} sx={styles.photo} />
       </Box>

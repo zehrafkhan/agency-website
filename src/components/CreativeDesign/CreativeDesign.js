@@ -3,34 +3,47 @@ import Box from "@mui/material/Box";
 import Stack from "@mui/material/Stack";
 
 import Typography from "@mui/material/Typography";
-import strategy_svg from "../../assets/img/strategy.svg";
-import design_svg from "../../assets/img/vector-art-and-design-svgrepo-com.svg";
-import development_svg from "../../assets/img/code-coding-development-programming-web-webpage-svgrepo-com.svg";
+// import strategy_svg from "../../assets/img/strategy.svg";
+// import design_svg from "../../assets/img/vector-art-and-design-svgrepo-com.svg";
+
+import mech from "../../assets/img/mech.png";
+import software_development from "../../assets/img/software_development.png";
+import digi from "../../assets/img/digi.png";
+import engineering from "../../assets/img/engineering.png";
+import civil from "../../assets/img/civil.png";
+import search from "../../assets/img/search.png";
+
 import Card from "../Card";
 import styles from "./styles";
+import Fade from 'react-reveal/Fade';
+
 
 const data = [
-  { title: "Strategy", svg: strategy_svg },
-  { title: "Product design", svg: design_svg},
-  { title: "Development", svg: development_svg },
+  { title: "Civil Engineering", svg: civil},
+  { title: "Computer Engineering", svg: software_development},
+  { title: "Electronics and Telecommunication", svg: engineering },
+  { title: "Mechenical Engineering", svg: mech  },
+  { title: "Chemical Engineering", svg: search },
+  { title: "Digital Electronics", svg: digi },
 ];
 
 const CreativeDesign = () => {
   return (
     <Box sx={styles.creativDesign}>
       <Box sx={styles.wrapper}>
-        <Typography variant="h2">creative design solutions</Typography>
+        <Typography variant="h2"><Fade left>Cources We Have Offered..!! </Fade></Typography>
         <Typography
           variant="body1"
           sx={{ textTransform: "capitalize", margin: "25px 0" }}
         >
-          professional deign agency to provide solutions {""}
+          To make nation proud by imparting knowledge to the masses. {""}
         </Typography>
         <Stack sx={styles.stack}>
           {data.map((item, index) => {
             return <Card title={item.title} imgSrc={item.svg} key={index} />;
           })}
         </Stack>
+       
       </Box>
     </Box>
   );

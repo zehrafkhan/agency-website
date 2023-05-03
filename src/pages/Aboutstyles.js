@@ -18,6 +18,7 @@ const styles = {
     },
   }),
   photo: {
+    height:'43%',
     width:'100%',
     maxWidth: '335px',
     display: 'block',

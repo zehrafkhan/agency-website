@@ -20,7 +20,11 @@ const styles = {
       }),
 }
 
-const Button = ({children}) => {
-  return <MuiButton sx={styles.btn}>{children}</MuiButton>;
-};
+const Button = ({ children, type = 'button' }) => {
+  return (
+    <MuiButton type={type} sx={styles.btn}>
+      {children}
+    </MuiButton>
+  )
+}
 export default Button;

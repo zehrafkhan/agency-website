@@ -17,22 +17,23 @@ const Card = ({ title, imgSrc }) => {
 
 
   return (
+    
     <MuiCard sx={styles.card}>
       <CardContent sx={{ padding: 0 }}>
-        <Box component="img" src={imgSrc} />
+        <Box component="img" src={imgSrc} style={{width:'35%'}} />
         <Typography variant="h3">{title}</Typography>
         <List>
           <ListItem sx={styles.listItem}>
             <Box component="img" src={arrowRight} sx={{ margin: "3px" }} />
-            product manegment
+            InRoll Now
           </ListItem>
           <ListItem sx={styles.listItem}>
             <Box component="img" src={arrowRight} sx={{ margin: "3px" }} />
-            mpv definition
+            Make your dream come true
           </ListItem>
           <ListItem sx={styles.listItem}>
             <Box component="img" src={arrowRight} sx={{ margin: "3px" }} />
-            product strategy
+           Limited  seats
           </ListItem>
         </List>
       </CardContent>
