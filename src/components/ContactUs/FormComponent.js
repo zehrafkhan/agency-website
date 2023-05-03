@@ -16,7 +16,7 @@ const validationSchema = yup.object({
     .email("Enter a valid email")
     .required("Email is required"),
   fullName: yup.string().required("Name is required"),
-  message: yup.string().min(20, "Too short!"),
+  message: yup.string().min(5, "Too short!"),
 });
 
 const FormComponent = () => {
@@ -29,7 +29,7 @@ const FormComponent = () => {
     validationSchema: validationSchema,
     onSubmit: async (values, { resetForm }) => {
       console.log(values);
-      alert(`Email: ${values.email} from ${values.fullName}`);
+      alert('submitted');
     },
   });
 
