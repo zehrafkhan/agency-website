@@ -1,14 +1,14 @@
 import React from 'react'
 import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
-import Link from '@mui/material/Link'
+// import Link from '@mui/material/Link'
 import List from '@mui/material/List'
 import ListItem from '@mui/material/ListItem'
 import Paper from '@mui/material/Paper'
 import InputBase from '@mui/material/InputBase'
 import Button from '@mui/material/Button'
 import Grid from '@mui/material/Grid'
-
+import { Link } from 'react-router-dom'
 //SVG ICONS AND IMAGES
 import InstagramIcon from '@mui/icons-material/Instagram'
 import TwitterIcon from '@mui/icons-material/Twitter'
@@ -26,8 +26,8 @@ const services = [
 ]
 
 const links = [
-  'maharastra.gov.in',
-  'msbte.org.in',
+ <Link to='https://mahadbt.maharashtra.gov.in/'>'maharastra.gov.in'</Link> ,
+ <Link to='https://msbte.org.in/'>'msbte.org.in'</Link> ,
 
 ]
 
@@ -71,7 +71,7 @@ const Footer = () => {
               {links.map((item, index) => {
                 return (
                   <ListItem sx={styles.itemList} key={index}>
-                    {item}
+                   {item} 
                   </ListItem>
                 )
               })}
