@@ -8,7 +8,7 @@ const pages = [
   { title: 'Services', arrow: false, link: '/services' },
   { title: 'Admission', arrow: false, link: '/admission' },
   { title: 'Acedmics', arrow: true },
-  { title: 'Events', arrow: false, link: '/pages' },
+  { title: 'Events', arrow: false, link: '/Events' },
   { title: 'Contact', arrow: false, link: '/contact' },
 ]
 
@@ -18,7 +18,7 @@ const Navbar = () => {
       sx={{ flexGrow: 1, display: { lg: 'flex' }, justifyContent: 'flex-end' }}
     >
       {pages.map((page, index) => (
-        <BtnNav page={page} key={index} />
+        <BtnNav page={page} key={index}/>
       ))}
     </Box>
   )

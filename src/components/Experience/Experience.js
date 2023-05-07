@@ -1,35 +1,34 @@
 import React from 'react'
 import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
-import Link from '@mui/material/Link'
+// import Link from '@mui/material/Link'
 import Grid from '@mui/material/Grid'
+import { Link } from 'react-router-dom'
 
 //SVG ICONS AND IMAGES
-import dashboardPhoto from '../../assets/img/dashboard-photo.svg'
-import landingPagePhoto from '../../assets/img/landing-page-photo.svg'
-import illustrationPagePhoto from '../../assets/img/illustration-page-photo.svg'
+import industrial_visit  from '../../assets/img/industrial_visit.jpg'
+import Event from '../../assets/img/Event.JPG'
+import seminar from '../../assets/img/seminar.jpg'
+import last_practical from '../../assets/img/last_practical.jpg'
+
 
 import styles from './styles'
 
 const links = [
-  'Show all',
-  'Gallary',
-  'Achievements',
-  'Parties',
-  'Ceremoney',
-  'Award Distribution',
+"Show all",
+
 ]
 
 const Experience = () => {
   return (
     <Box sx={styles.experience}>
       <Box sx={styles.wrapper}>
-        <Typography variant='h2'>Recent News</Typography>
+        <Typography variant='h2'>Recent Events</Typography>
         <Typography
           variant='body1'
           sx={{ textTransform: 'capitalize', margin: '25px 0' }}
         >
-        Perfection is achieved,not when there is nothing more to add, but when there is nothing left to take away
+   Memory is a way of holding on to the things you love, the things you are, the things you never want to lose.
 
         </Typography>
         <Box sx={styles.links}>
@@ -49,25 +48,37 @@ const Experience = () => {
         >
           <Grid item xs={6} sm={4} md={4}>
             <Box>
-              <Box component='img' src={dashboardPhoto} sx={styles.imgItem} />
-              <Typography sx={styles.contentTitle}>dashborad design</Typography>
+              <Box component='img' src={industrial_visit} sx={styles.imgItem} />
+              <Typography sx={styles.contentTitle}>Industrial Visit</Typography>
             </Box>
           </Grid>
           <Grid item xs={6} sm={4} md={4}>
             <Box>
-              <Box component='img' src={landingPagePhoto} sx={styles.imgItem} />
-              <Typography sx={styles.contentTitle}>landing pages</Typography>
+              <Box component='img' src={Event} sx={styles.imgItem} style={{height:"300px"}} />
+              <Typography sx={styles.contentTitle}>Technomania 2023 Event</Typography>
             </Box>
           </Grid>
           <Grid item xs={6} sm={4} md={4}>
             <Box>
               <Box
                 component='img'
-                src={illustrationPagePhoto}
+                src={seminar}
                 sx={styles.imgItem}
               />
               <Typography sx={styles.contentTitle}>
-                ilustration design
+              career guidance Seminar 2023
+              </Typography>
+            </Box>
+          </Grid>
+          <Grid item xs={6} sm={4} md={4}>
+            <Box>
+              <Box
+                component='img'
+                src={last_practical}
+                sx={styles.imgItem}
+              />
+              <Typography sx={styles.contentTitle}>
+                Last Day Of Practical Examination
               </Typography>
             </Box>
           </Grid>

@@ -18,12 +18,12 @@ const styles = {
     },
   }),
   photo: {
-    height:'43%',
+    height:'35%',
     width:'100%',
     maxWidth: '335px',
     display: 'block',
     margin: '10px auto 0',
-    borderRadius: '48%'
+    borderRadius: '1%'
   },
   text: (theme) => ({
     margin: "25px 0",

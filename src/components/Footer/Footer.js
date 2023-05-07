@@ -26,8 +26,8 @@ const services = [
 ]
 
 const links = [
- <Link to='https://mahadbt.maharashtra.gov.in/'>'maharastra.gov.in'</Link> ,
- <Link to='https://msbte.org.in/'>'msbte.org.in'</Link> ,
+ <Link to='https://mahadbt.maharashtra.gov.in/' style={{textDecoration:"none"}}>maharastra.gov.in</Link> ,
+ <Link to='https://msbte.org.in/'style={{textDecoration:"none"}}>msbte.org.in</Link> ,
 
 ]
 

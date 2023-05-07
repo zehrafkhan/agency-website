@@ -11,7 +11,7 @@ const styles = {
   //     margin:'5px'
   // },
     [theme.breakpoints.up("md")]: {
-      maxWidth: "309px",
+      maxWidth: "370px",
     },
   }),
   btn: (theme) => ({

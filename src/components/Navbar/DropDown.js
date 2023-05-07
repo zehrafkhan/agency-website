@@ -39,7 +39,7 @@ export default function BasicMenu({ page }) {
         }}
       
       >
-        <MenuItem onClick={handleClose}><Link to='/co'   style={{textDecoration:'none', color:'black'}}>Computer Engineering</Link></MenuItem>
+        <MenuItem onClick={handleClose} >  <Link to='/co'   style={{textDecoration:'none', color:'black'}}>Computer Engineering</Link></MenuItem>
         <MenuItem onClick={handleClose}><Link to='/civil'  style={{textDecoration:'none', color:'black'}}>Civil Engineering</Link></MenuItem>
         <MenuItem onClick={handleClose}><Link to='/mh'  style={{textDecoration:'none', color:'black'}}>Mechenical Engineering</Link></MenuItem>
         <MenuItem onClick={handleClose}><Link to='/elec'  style={{textDecoration:'none', color:'black'}}>Electronic Engineering</Link></MenuItem>
