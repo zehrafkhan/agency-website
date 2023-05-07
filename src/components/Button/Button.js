@@ -7,7 +7,7 @@ const styles = {
     {
         fontFamily: "Montserrat, sans-serif",
         fontWeight: 700,
-        fonSize: "16px",
+        fontSize: "16px",
         lineHeight: "20px",
         textTransform: "capitalize",
         color: "#FFFFFF",

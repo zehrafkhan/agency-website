@@ -32,7 +32,7 @@ const Header = () => {
           </Box>
 
           <Typography component="a" href="/" sx={styles.logoMob}>
-            <img src={logomob} alt="logo" style={{width:"35%", marginTop:"14px"}}/>
+            <img src={logomob} alt="logo" style={{width:"35%", marginTop:"10px"}}/>
           </Typography>
           <Box sx={{flexGrow: 1, display: {xs: 'none', lg:'flex'}}}>
             <Navbar />

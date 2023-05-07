@@ -3,7 +3,7 @@ import Box from "@mui/material/Box";
 
 import Typography from "@mui/material/Typography";
 
-import photo_banner from "../assets/img/photo_banner.jpeg";
+import clg_pic from "../assets/img/clg_pic.jpeg";
 
 import Fade from 'react-reveal/Fade';
 
@@ -13,8 +13,10 @@ const About = () => {
   return (
     <Box sx={styles.hero}>
       <Box sx={styles.wrapper}>
+      
+      <Box component='img' src={clg_pic} sx={styles.photo} />
         <Box sx={{ textAlign: "left" }}>
-          <Typography variant="h2"> <Fade left>History of S.H Jondhale Polytechnic </Fade></Typography>
+       <br /> <Typography variant="h2"><Fade Right>History of S.H Jondhale Polytechnic </Fade></Typography>
           <Typography variant="body1" sx={styles.text}>
           
 SHJP was founded in year 1984 and had been serving society for more than 25 years now. We have a strong students base since then, and by now more than 10,000 diploma holders has passed out from the institute and spread all over the world.They have been spread across different elds such as education, industry, trade etc.
@@ -27,7 +29,7 @@ At S. H. Jondhale Polytechnic emphasis is given on not only making you academica
           </Typography>
        
         </Box>
-        <Box component='img' src={photo_banner} sx={styles.photo} />
+     
       </Box>
     </Box>
   );

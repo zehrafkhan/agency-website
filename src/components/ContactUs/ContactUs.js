@@ -3,7 +3,7 @@ import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
 import MailOutlineIcon from '@mui/icons-material/MailOutline'
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone'
-import photo_send from '../../assets/img/photo_send_2.png'
+// import photo_send from '../../assets/img/contact.jpeg'
 
 import styles from './styles'
 import FormComponent from './FormComponent'
@@ -13,7 +13,7 @@ const ContactUs = () => {
     <Box sx={styles.contactUs}>
       <Box sx={styles.wrapper}>
         <Box sx={styles.form}>
-          <Typography variant='h2'>In Roll Now</Typography>
+          <Typography variant='h2'>Contact Us</Typography>
           <Typography variant='body1'>
           “Champions aren’t made in gyms. Champions are made from something they have deep inside them - a desire, a dream, a vision.”
           </Typography>
@@ -36,9 +36,9 @@ const ContactUs = () => {
 
           <FormComponent />
         </Box>
-        <Box>
+        {/* <Box>
           <Box component='img' src={photo_send} sx={styles.photo} />
-        </Box>
+        </Box> */}
       </Box>
     </Box>
   )

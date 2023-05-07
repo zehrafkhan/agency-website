@@ -20,7 +20,7 @@ const Hero = () => {
           “FulFill Your DREAMS Through RIGHTEOUS Education”,
           Learn how to be happy with what you have while you pursue all that you want.
           </Typography>
-          <Button><Link to='/contact' style={{textDecoration:'none'}}>join us</Link></Button>
+          <Button><Link to='/contact' style={{textDecoration:'none', color:"white"}}>join us</Link></Button>
         </Box>
         <Box component='img' src={photo_banner} sx={styles.photo} />
       </Box>
