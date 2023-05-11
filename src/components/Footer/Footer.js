@@ -17,13 +17,7 @@ import FacebookIcon from '@mui/icons-material/Facebook'
 
 import styles from './styles'
 
-const services = [
-  'Students support',
-  'Ac Labs',
-  'Library',
-  'Well Maintained Classrooms',
-  'Auditorium',
-]
+
 
 const links = [
  <Link to='https://mahadbt.maharashtra.gov.in/' style={{textDecoration:"none"}}>maharastra.gov.in</Link> ,
@@ -46,22 +40,6 @@ const Footer = () => {
         columns={{ xs: 4, sm: 8, md: 12 }}
         sx={styles.gridWrapper}
       >
-        <Grid item xs={6} sm={4} md={3}>
-          <Box>
-            <Typography variant='h3' sx={styles.linkTitle}>
-              services
-            </Typography>
-            <List>
-              {services.map((item, index) => {
-                return (
-                  <ListItem sx={styles.itemList} key={index}>
-                    {item}
-                  </ListItem>
-                )
-              })}
-            </List>
-          </Box>
-        </Grid>
         <Grid item xs={6} sm={4} md={3}>
           <Box>
             <Typography variant='h3' sx={styles.linkTitle}>

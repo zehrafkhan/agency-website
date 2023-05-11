@@ -17,10 +17,13 @@ import styles from "./styles";
 
 const Header = () => {
   const [openDrawer, setOpenDrawer] = useState(false);
+  const sendData = (data) => {
+    setOpenDrawer(data)
+   }
   return (
     <AppBar position="static" sx={styles.appBar}>
       <Container maxWidth="xl" sx={styles.container}>
-        <Drawer open={openDrawer} onClose={() => setOpenDrawer(false)} />
+        <Drawer  sendData={sendData} open={openDrawer} onClose={() => setOpenDrawer(false)} />
         <Toolbar disableGutters>
           <Typography component="a" href="/" sx={styles.logoDesk}>
             <img src={logo} alt="logo" style={{width:"80%"}}/>
@@ -35,7 +38,7 @@ const Header = () => {
             <img src={logomob} alt="logo" style={{width:"35%", marginTop:"10px"}}/>
           </Typography>
           <Box sx={{flexGrow: 1, display: {xs: 'none', lg:'flex'}}}>
-            <Navbar />
+            <Navbar sendData={sendData}  />
             </Box>
         </Toolbar>
       </Container>

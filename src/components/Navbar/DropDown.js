@@ -6,13 +6,14 @@ import arrow from '../../assets/img/chevron-down.svg'
 import styles from './styles'
 import { Link } from 'react-router-dom'
 
-export default function BasicMenu({ page }) {
+export default function BasicMenu(props) {
   const [anchorEl, setAnchorEl] = React.useState(null)
   const open = Boolean(anchorEl)
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget)
   }
   const handleClose = () => {
+    props?.sendData(false)
     setAnchorEl(null)
   }
 
@@ -27,7 +28,7 @@ export default function BasicMenu({ page }) {
         onClick={handleClick}
         sx={styles.btnLink}
       >
-        {page.title} <img src={arrow} alt='arrow' />
+        {props?.page.title} <img src={arrow} alt='arrow' />
       </Button>
       <Menu
         id='basic-menu'

@@ -14,7 +14,7 @@ const styles = {
       maxWidth: "370px",
     },
   }),
-  btn: (theme) => ({
+  btnItem: (theme) => ({
     fontFamily: "Montserrat, sans-sarif",
     fontWeight: 500,
     fontSize: "16px",

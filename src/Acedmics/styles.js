@@ -27,26 +27,40 @@ const styles = {
         },
     }),
     imgItem: (theme)=>({
+        justifyContent: 'center',
         width: '100%',
         marginTop: '24px',
-        maxWidth: '403px',
+        marginBottom: "30px",
+        maxWidth: '447px',
         [theme.breakpoints.up('sm')]: {
             marginTop: '44px',
+            marginLeft:"400px",
+            justifyContent: 'center',
         },
     }),
+    text: (theme) => ({
+        margin: "25px 0",
+        [theme.breakpoints.up("md")]: {
+         marginBottom: '44px',
+         
+        },
+      }),
     contentTitle: (theme) => ({
-        fontSize: '14px',
-        lineHeight: '17px',
+        fontSize: '25px',
+        lineHeight: '25px',
         marginTop: '12px',
         maxWidth: '402px',
         textAlign: 'left',
         margin: '12px auto 0',
         ...theme.typography.someStyles,
         [theme.breakpoints.up('sm')]: {
-          fontSize: '24px',
+          fontSize: '31px',
           lineHeight: '29px',
         },
+        
       }),
+
+      
 }
 
 export default styles

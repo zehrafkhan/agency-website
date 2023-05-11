@@ -20,7 +20,6 @@ const admission = () => {
             Maharashtra State.
           </Typography>
           <br />
-
           <Typography variant="h2" style={{textDecoration:'underline'}}>
             {" "}
             <Fade left>General</Fade>

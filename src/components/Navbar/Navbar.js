@@ -12,13 +12,16 @@ const pages = [
   { title: 'Contact', arrow: false, link: '/contact' },
 ]
 
-const Navbar = () => {
+const Navbar = (props) => {
+  const sendData = (data) => {
+    props?.sendData(data)
+   }
   return (
     <Box
       sx={{ flexGrow: 1, display: { lg: 'flex' }, justifyContent: 'flex-end' }}
     >
       {pages.map((page, index) => (
-        <BtnNav page={page} key={index}/>
+        <BtnNav   sendData={sendData} page={page} key={index}/>
       ))}
     </Box>
   )

@@ -5,21 +5,25 @@ import DropDown from './DropDown'
 
 import styles from './styles'
 
-const BtnNav = ({ page }) => {
+const BtnNav = (props) => {
+  const onHandleClose = () => {
+    props?.sendData(false)
+  }
   return (
     <>
-      {page.arrow ? (
-        <DropDown page={page} />
+      {props?.page.arrow ? (
+        <DropDown sendData={onHandleClose} page={props?.page} />
       ) : (
         <Link
+        onClick={onHandleClose}
           component={NavLink}
-          to={page.link}
+          to={props?.page?.link}
           sx={styles.btnLink}
           style={({ isActive }) =>
             isActive ? { color: '#777FEB' } : undefined
           }
         >
-          {page.title}
+          {props?.page.title}
         </Link>
       )}
     </>
