@@ -37,7 +37,7 @@ const theme = createTheme({
         fontFamily: "Montserrat, sans-serif",
         fontWeight: 400,
         fontSize: "14px",
-        lineHeight: "17px",
+        lineHeight: "21px",
         color: '#686868',
         [breakpoints.up("md")]: {
           fontSize: "24px",

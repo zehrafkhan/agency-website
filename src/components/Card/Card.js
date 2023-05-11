@@ -10,11 +10,13 @@ import ListItem from "@mui/material/ListItem";
 
 import arrowRight from "../../assets/img/arrow-right.svg";
 
-
+import { Link } from 'react-router-dom';
 import styles from "./styles";
 
-const Card = ({ title, imgSrc }) => {
-
+const Card = ({ title, imgSrc, link }) => {
+  const handleButtonClick = () => {
+    window.scrollTo(0, 0); // Scroll to the top of the page
+  };
 
   return (
     
@@ -25,7 +27,7 @@ const Card = ({ title, imgSrc }) => {
         <List>
           <ListItem sx={styles.listItem}>
             <Box component="img" src={arrowRight} sx={{ margin: "3px" }} />
-            InRoll Now
+            EnRoll Now
           </ListItem>
           <ListItem sx={styles.listItem}>
             <Box component="img" src={arrowRight} sx={{ margin: "3px" }} />
@@ -38,7 +40,7 @@ const Card = ({ title, imgSrc }) => {
         </List>
       </CardContent>
       <CardActions sx={{ padding: 0 }}>
-        <Button sx={styles.btn}>
+        <Button sx={styles.btnItem} component={Link} to={link} onClick={handleButtonClick} >
           Read More
           <Box component="img" src={arrowRight} />
         </Button>

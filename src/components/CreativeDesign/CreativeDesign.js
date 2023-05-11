@@ -19,12 +19,12 @@ import Fade from 'react-reveal/Fade';
 
 
 const data = [
-  { title: "Civil Engineering", svg: civil},
-  { title: "Computer Engineering", svg: software_development},
-  { title: "Electronics and Telecommunication", svg: engineering },
-  { title: "Mechenical Engineering", svg: mech  },
-  { title: "Chemical Engineering", svg: search },
-  { title: "Digital Electronics", svg: digi },
+  { title: "Civil Engineering", svg: civil, link: '/civil'},
+  { title: "Computer Engineering", svg: software_development, link: '/co'},
+  { title: "Electronics and Telecommunication", svg: engineering, link: '/elec' },
+  { title: "Mechenical Engineering", svg: mech, link: '/mh'  },
+  { title: "Chemical Engineering", svg: search, link: '/chem' },
+  { title: "Digital Electronics", svg: digi, link: '/digi' },
 ];
 
 const CreativeDesign = () => {
@@ -40,7 +40,7 @@ const CreativeDesign = () => {
         </Typography>
         <Stack sx={styles.stack}>
           {data.map((item, index) => {
-            return <Card title={item.title} imgSrc={item.svg} key={index} />;
+            return <Card title={item.title} imgSrc={item.svg} link={item.link}  key={index} />;
           })}
         </Stack>
        
